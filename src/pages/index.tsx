@@ -1,18 +1,39 @@
 import * as Popover from "@radix-ui/react-popover";
+import { useEffect, useMemo, useState } from "react";
+import Pusher from "pusher-js";
 
 export default function Index() {
+  const [m, setM] = useState([]);
+  const pusher = useMemo(() => {
+    const p = new Pusher("test", {
+      wssPort: 443,
+      wsPort: 80,
+      wsHost: "soketi.do-not-tread-on.me",
+    });
+
+    const channel = p.subscribe("my-channel");
+
+    channel.bind("my-event", function (data) {
+      setM((prevState) => [...prevState, data]);
+    });
+    console.log("bind");
+    return p;
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      pusher.unsubscribe("my-event");
+    };
+  }, []);
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex h-screen w-screen flex-col items-center justify-center">
       <div>
-        <Popover.Root>
-          <Popover.Trigger className="bg-white p-2">More info</Popover.Trigger>
-          <Popover.Portal>
-            <Popover.Content className="w-40 border-2 bg-white p-5">
-              Some more info…
-              <Popover.Arrow className="fill-white" />
-            </Popover.Content>
-          </Popover.Portal>
-        </Popover.Root>
+        <h2>Messages length {m.length} </h2>
+      </div>
+      <div>
+        {m.map((msg) => (
+          <div key={msg.id}>{msg.message}</div>
+        ))}
       </div>
     </div>
   );

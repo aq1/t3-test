@@ -1,0 +1,249 @@
+[
+  {
+    "model": "skills.skillrelation",
+    "pk": "AQOOnbQ",
+    "fields": {
+      "skill": "oLPDJLM",
+      "parent": "Dl0Kg2p",
+      "meta": {
+        "sourceHandle": "bottom",
+        "targetHandle": "tTop"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "oLyZXxQ",
+    "fields": {
+      "skill": "P2VW3lo",
+      "parent": "oLPDJLM",
+      "meta": {
+        "sourceHandle": "bottom",
+        "targetHandle": "tTop"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "JQ5KmGl",
+    "fields": {
+      "skill": "j2bWPlG",
+      "parent": "P2VW3lo",
+      "meta": {
+        "sourceHandle": "bottom",
+        "targetHandle": "tTop"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "VlNxeyQ",
+    "fields": {
+      "skill": "Aljp3QK",
+      "parent": "j2bWPlG",
+      "meta": {
+        "sourceHandle": "bottom",
+        "targetHandle": "tTop"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "3QGbNYL",
+    "fields": {
+      "skill": "B21pAQD",
+      "parent": "Aljp3QK",
+      "meta": {
+        "sourceHandle": "bottom",
+        "targetHandle": "tTop"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "KLq64aQ",
+    "fields": {
+      "skill": "ZlxW12r",
+      "parent": "P2VW3lo",
+      "meta": {
+        "sourceHandle": "left",
+        "targetHandle": "tRight"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "elg9R0Q",
+    "fields": {
+      "skill": "o2pbnLE",
+      "parent": "ZlxW12r",
+      "meta": {
+        "sourceHandle": "left",
+        "targetHandle": "tRight"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "rlRj7Jl",
+    "fields": {
+      "skill": "glmq9lR",
+      "parent": "j2bWPlG",
+      "meta": {
+        "sourceHandle": "right",
+        "targetHandle": "tLeft"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "7lezBVL",
+    "fields": {
+      "skill": "kl8DVle",
+      "parent": "oLPDJLM",
+      "meta": {
+        "sourceHandle": "right",
+        "targetHandle": "tLeft"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "KQnYr6L",
+    "fields": {
+      "skill": "Zld8xlg",
+      "parent": "ZlxW12r",
+      "meta": {
+        "sourceHandle": "bottom",
+        "targetHandle": "tTop"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "plwBXq2",
+    "fields": {
+      "skill": "KLXbr2B",
+      "parent": "P2VW3lo",
+      "meta": {
+        "sourceHandle": "right",
+        "targetHandle": "tLeft"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "N2MOReL",
+    "fields": {
+      "skill": "oLyZ1QP",
+      "parent": "kl8DVle",
+      "meta": {
+        "sourceHandle": "right",
+        "targetHandle": "tLeft"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "EQ7KmeQ",
+    "fields": {
+      "skill": "pLo9g2Y",
+      "parent": "oLyZ1QP",
+      "meta": {
+        "sourceHandle": "right",
+        "targetHandle": "tLeft"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "elD3zG2",
+    "fields": {
+      "skill": "JQ5Kglz",
+      "parent": "Zld8xlg",
+      "meta": {
+        "sourceHandle": "left",
+        "targetHandle": "tRight"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "M2r9BKQ",
+    "fields": {
+      "skill": "VlNxnQ7",
+      "parent": "Zld8xlg",
+      "meta": {
+        "sourceHandle": "left",
+        "targetHandle": "tRight"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "R2AWDYL",
+    "fields": {
+      "skill": "3QGb6LE",
+      "parent": "VlNxnQ7",
+      "meta": {
+        "sourceHandle": "left",
+        "targetHandle": "tRight"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "4QknDnL",
+    "fields": {
+      "skill": "rlR5N2n",
+      "parent": "oLPDJLM",
+      "meta": {
+        "sourceHandle": "left",
+        "targetHandle": "tRight"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "6l4brvQ",
+    "fields": {
+      "skill": "7leNzLK",
+      "parent": "oLyZ1QP",
+      "meta": {
+        "sourceHandle": "right",
+        "targetHandle": "tLeft"
+      },
+      "is_required": false
+    }
+  },
+  {
+    "model": "skills.skillrelation",
+    "pk": "62BPr0L",
+    "fields": {
+      "skill": "KQngg2R",
+      "parent": "Dl0Kg2p",
+      "meta": {
+        "sourceHandle": "left",
+        "targetHandle": "tRight"
+      },
+      "is_required": false
+    }
+  }
+]

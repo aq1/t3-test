@@ -1,0 +1,861 @@
+[
+  {
+    "model": "skills.skill",
+    "pk": "Dl0Kg2p",
+    "fields": {
+      "slug": "privet",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "O7lezLK",
+      "title": "Привет!",
+      "description": {
+        "blocks": [
+          {
+            "id": "bd6e48a67e",
+            "data": {
+              "text": "И добро пожаловать!"
+            },
+            "type": "paragraph"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-10-17/285f0419-e9cf-4974-b57d-4f9e7700437a.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 495,
+          "y": 210,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "oLPDJLM",
+    "fields": {
+      "slug": "bloking",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "Блокинг",
+      "description": {
+        "time": 1667249032132,
+        "blocks": [
+          {
+            "id": "3957766fdb",
+            "data": {
+              "text": "Разбираемся с блокингом. В этом навыке мы используем самые простые инструменты и не залезаем в сетку."
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "b3a6e9db09",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-16/cbd3b640-5e4d-494c-9a48-b674220f09ee.png",
+                "name": "Блокинг ce802daa851a4d88b56367b3f742bf46/Untitled_(1).png",
+                "size": 503638,
+                "title": "Блокинг ce802daa851a4d88b56367b3f742bf46/Untitled_(1).png",
+                "width": 2030,
+                "height": 1125,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-16/0c1caab4-dac5-4a54-9fcc-9c642ce064b2.png",
+                  "name": "t_Блокинг ce802daa851a4d88b56367b3f742bf46/Untitled_(1).png",
+                  "size": 49226,
+                  "title": "t_Блокинг ce802daa851a4d88b56367b3f742bf46/Untitled_(1).png",
+                  "width": 300,
+                  "height": 166
+                }
+              },
+              "caption": "",
+              "stretched": false,
+              "withBorder": false,
+              "withBackground": false
+            },
+            "type": "image"
+          }
+        ],
+        "version": "2.24.3"
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-10-16/d320778d-bc29-4c5e-a8e5-f9c2e630b62d.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 495,
+          "y": 375,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "kl8DVle",
+    "fields": {
+      "slug": "tsvet",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "REQ7bLj",
+      "title": "Цвет",
+      "description": {
+        "blocks": [
+          {
+            "id": "0df85a0c6f",
+            "data": {
+              "text": "Учимся красить драфт и экспериментировать с цветом — без развёртки, запечки и других технических этапов. "
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "5599def808",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "/media/uploaded/quest/2023-07-14/6f292c9a-41ac-4a5b-afca-dbbc899878b7.png",
+                "name": "Цвет f73cbaa75f8849e19a36e970d8c79959/Alise.png",
+                "size": 1066494,
+                "title": "Цвет f73cbaa75f8849e19a36e970d8c79959/Alise.png",
+                "width": 1920,
+                "height": 1080,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "/media/uploaded/quest/2023-07-14/881ef192-5750-44a7-bb92-2de29c493e1d.png",
+                  "name": "t_Цвет f73cbaa75f8849e19a36e970d8c79959/Alise.png",
+                  "size": 46803,
+                  "title": "t_Цвет f73cbaa75f8849e19a36e970d8c79959/Alise.png",
+                  "width": 300,
+                  "height": 168
+                }
+              }
+            },
+            "type": "image"
+          }
+        ]
+      },
+      "icon": "/media/uploaded/skill/2023-07-14/0cb26b92-a9e2-42d2-afae-8631f70463ac.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 630,
+          "y": 375,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "j2bWPlG",
+    "fields": {
+      "slug": "topologiia",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "XplwdLW",
+      "title": "Топология",
+      "description": {
+        "blocks": [
+          {
+            "id": "49aecfe45d",
+            "data": {
+              "text": "В этом разделе мы поговорим о том, что часто скрыто от зрителя — об устройстве сетки: её составляющих, связанных с ней основных ошибках и о том, как этих ошибок не допускать."
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "55603ed65b",
+            "data": {
+              "file": {
+                "ext": "gif",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-01-23/5c150186-c8f1-4a55-b0d6-86ebdb71e033.gif",
+                "name": "Топология b22d200d937446f79a2fabe558255f4f/Fix_ngon 1.gif",
+                "size": 476315,
+                "title": "Топология b22d200d937446f79a2fabe558255f4f/Fix_ngon 1.gif",
+                "width": 842,
+                "height": 678,
+                "thumbnail": {
+                  "ext": "gif",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-01-23/d237193a-88ff-4880-9ad5-f5e566602afe.gif",
+                  "name": "t_Топология b22d200d937446f79a2fabe558255f4f/Fix_ngon 1.gif",
+                  "size": 33169,
+                  "title": "t_Топология b22d200d937446f79a2fabe558255f4f/Fix_ngon 1.gif",
+                  "width": 300,
+                  "height": 241
+                }
+              }
+            },
+            "type": "image"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-01-23/07d56bfe-37c7-4ed6-8ecf-378c4a37083f.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 495,
+          "y": 705,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "B21pAQD",
+    "fields": {
+      "slug": "podacha",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "ZelDw2D",
+      "title": "Подача",
+      "description": {
+        "time": 1665680925376,
+        "blocks": [
+          {
+            "id": "20df9219d0",
+            "data": {
+              "text": "Как сделать так, чтобы твоя работа не затерялась среди тысяч других, не менее гениальных? Вся хитрость в подаче. В этом навыке расскажем о важных принципах подачи.&nbsp;"
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "82939a5ad0",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-11/c2b22c17-75b4-4b0e-8c48-38d586e7e6b8.png",
+                "name": "Подача 28469649fa434ea5bb3153de31b5b7bb/covr_Viewport_026.png",
+                "size": 905515,
+                "title": "Подача 28469649fa434ea5bb3153de31b5b7bb/covr_Viewport_026.png",
+                "width": 1080,
+                "height": 1080,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-11/5963b6a8-e2e8-47f7-882d-a845de36feec.png",
+                  "name": "t_Подача 28469649fa434ea5bb3153de31b5b7bb/covr_Viewport_026.png",
+                  "size": 87388,
+                  "title": "t_Подача 28469649fa434ea5bb3153de31b5b7bb/covr_Viewport_026.png",
+                  "width": 300,
+                  "height": 300
+                }
+              },
+              "caption": "",
+              "stretched": false,
+              "withBorder": false,
+              "withBackground": false
+            },
+            "type": "image"
+          }
+        ],
+        "version": "2.24.3"
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-10-11/07b16e13-6ace-4eca-81b7-73fd32c6f1c9.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 495,
+          "y": 1035,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "o2pbnLE",
+    "fields": {
+      "slug": "konstruktor",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "Модульный конструктор",
+      "description": {
+        "blocks": [
+          {
+            "id": "35c82e5b82",
+            "data": {
+              "text": "Модульность — подход в создании игрового окружения, при котором большие формы собраны из небольших повторяющихся и стыкующихся между собой частей. Что такое модульный конструктор, как с ним работать и какие существуют хитрости — обо всём расскажем в этом навыке."
+            },
+            "type": "paragraph"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-12-15/3c787b2a-9ece-4d27-95b8-f2306d1cc73f.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 224,
+          "y": 540,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "Zld8xlg",
+    "fields": {
+      "slug": "masshtab",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "Масштаб",
+      "description": {
+        "time": 1671708470168,
+        "blocks": [
+          {
+            "id": "013122670d",
+            "data": {
+              "text": "В визуальном плане понятия «большой» и «маленький», «пустой» и «наполненный» проще всего определить через масштаб. Давай разберёмся, как с ним работать, что нужно сделать, чтобы за картинку не было стыдно, и рассмотрим основные ошибки, связанные с масштабом. "
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "ac623555bf",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-12-15/bdaa13d4-6ac3-4f24-9d12-96069157ea21.png",
+                "name": "Масштаб 9137449658b14c378bddeb520015f307/Untitled 11.png",
+                "size": 1171088,
+                "title": "Масштаб 9137449658b14c378bddeb520015f307/Untitled 11.png",
+                "width": 800,
+                "height": 671,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-12-15/18bd5080-c3cb-44cd-95b5-6206dbd87f16.png",
+                  "name": "t_Масштаб 9137449658b14c378bddeb520015f307/Untitled 11.png",
+                  "size": 105775,
+                  "title": "t_Масштаб 9137449658b14c378bddeb520015f307/Untitled 11.png",
+                  "width": 300,
+                  "height": 251
+                }
+              },
+              "caption": "",
+              "stretched": false,
+              "withBorder": false,
+              "withBackground": false
+            },
+            "type": "image"
+          }
+        ],
+        "version": "2.24.3"
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-12-15/f231c2c2-360b-465e-a3b2-4403a82b5714.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 360,
+          "y": 765,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "P2VW3lo",
+    "fields": {
+      "slug": "analiz-form",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "Анализ форм",
+      "description": {
+        "blocks": [
+          {
+            "id": "a3de91ce8e",
+            "data": {
+              "text": "Чтобы 3D-объекты были максимально приближены по объёмам и размерам к референсам, нужно проводить анализ форм и пропорций. Что это такое и почему это так важно — расскажем в этом навыке."
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "4a5ee6dedf",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-05-14/dedcc844-2415-4749-9c55-03958c615b7f.png",
+                "name": "Анализ форм 8269f8e33bd042c6be2d411306ea4de1/form_analysis_4.png",
+                "size": 1036102,
+                "title": "Анализ форм 8269f8e33bd042c6be2d411306ea4de1/form_analysis_4.png",
+                "width": 2560,
+                "height": 1440,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-05-14/42b20f0b-749f-4afe-b7f5-59a3672360e4.png",
+                  "name": "t_Анализ форм 8269f8e33bd042c6be2d411306ea4de1/form_analysis_4.png",
+                  "size": 77246,
+                  "title": "t_Анализ форм 8269f8e33bd042c6be2d411306ea4de1/form_analysis_4.png",
+                  "width": 300,
+                  "height": 168
+                }
+              }
+            },
+            "type": "image"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-05-14/091df28a-9b4c-4b85-8f3a-e4a914b5a7bf.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 495,
+          "y": 540,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "Aljp3QK",
+    "fields": {
+      "slug": "poriadok-v-stsene",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "O7lezLK",
+      "title": "Порядок в сцене",
+      "description": {
+        "blocks": [
+          {
+            "id": "7803fb416e",
+            "data": {
+              "text": "Как сделать так, чтобы было чисто? Учимся наводить порядок. "
+            },
+            "type": "paragraph"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-10-12/4056eba6-963e-40f7-81d2-878f04943529.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 495,
+          "y": 870,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "glmq9lR",
+    "fields": {
+      "slug": "uv-razvertka",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "XplwdLW",
+      "title": "UV-развёртка",
+      "description": {
+        "time": 1666008386821,
+        "blocks": [
+          {
+            "id": "8fb65a80bc",
+            "data": {
+              "text": "Все мы любим модели с текстурами! Грамотная  UV поможет тебе упростить все процессы создания красоты на поверхностях модели. А также оптимизирует её использование в игровом движке."
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "795e33c95d",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-12/3a5d54d6-c61b-47a1-b8b0-3711ecbcae78.png",
+                "name": "UV-развёртка a3e7081e42a647a39a59bfac34260870/Untitled 31.png",
+                "size": 376643,
+                "title": "UV-развёртка a3e7081e42a647a39a59bfac34260870/Untitled 31.png",
+                "width": 810,
+                "height": 811,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-12/7f57bcda-bca6-463c-92e9-d9178cca91a6.png",
+                  "name": "t_UV-развёртка a3e7081e42a647a39a59bfac34260870/Untitled 31.png",
+                  "size": 200966,
+                  "title": "t_UV-развёртка a3e7081e42a647a39a59bfac34260870/Untitled 31.png",
+                  "width": 300,
+                  "height": 300
+                }
+              },
+              "caption": "",
+              "stretched": false,
+              "withBorder": false,
+              "withBackground": false
+            },
+            "type": "image"
+          }
+        ],
+        "version": "2.24.3"
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-10-12/9532f3a6-641f-4fee-99be-201313904c40.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 630,
+          "y": 705,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "ZlxW12r",
+    "fields": {
+      "slug": "tektonika",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "Тектоника",
+      "description": {
+        "blocks": [
+          {
+            "id": "6930af429a",
+            "data": {
+              "text": "Разберёмся с тектоникой и поймём, что влияет на наше восприятие объекта. "
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "84dee0b167",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-28/4b96b02c-6e95-4777-afe5-cc9c75ff0466.png",
+                "name": "Тектоника c49f866ced2744568655c9a082bfbc39/2.png",
+                "size": 1321910,
+                "title": "Тектоника c49f866ced2744568655c9a082bfbc39/2.png",
+                "width": 1920,
+                "height": 1080,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2022-10-28/a7a23ff4-d6c2-4c1d-ba87-458faf6f3790.png",
+                  "name": "t_Тектоника c49f866ced2744568655c9a082bfbc39/2.png",
+                  "size": 48552,
+                  "title": "t_Тектоника c49f866ced2744568655c9a082bfbc39/2.png",
+                  "width": 300,
+                  "height": 168
+                }
+              }
+            },
+            "type": "image"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-10-28/4703e80a-39af-48b3-afd3-5b418fa779da.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 360,
+          "y": 540,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "KLXbr2B",
+    "fields": {
+      "slug": "referensy",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "O7lezLK",
+      "title": "Работа с референсами",
+      "description": {
+        "blocks": []
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-11-20/f0719271-bcd8-4e31-bab6-67a586f2783b.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 630,
+          "y": 540,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "pLo9g2Y",
+    "fields": {
+      "slug": "metally",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "REQ7bLj",
+      "title": "Mеталлы",
+      "description": {
+        "time": null,
+        "blocks": [
+          {
+            "id": "f75ffee83e",
+            "data": {
+              "text": "Ты разберешься, как работать с референсами и проводить анализ материалов. Здесь ты узнаешь, какими бывают металлы и научишься раскладывать их по слоям. Этот навык поможет создавать сочные и правдоподобные текстуры.  ",
+              "__typename": "TextDataField"
+            },
+            "type": "paragraph",
+            "__typename": "ParagraphBlock"
+          }
+        ],
+        "version": null,
+        "__typename": "EditorField"
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2022-10-25/07d027e0-9936-4006-822d-cdf3953b2895.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 930,
+          "y": 315,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "oLyZ1QP",
+    "fields": {
+      "slug": "pbr-fizika-sveta",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "REQ7bLj",
+      "title": "PBR. Физика света",
+      "description": {
+        "blocks": [
+          {
+            "id": "69af125161",
+            "data": {
+              "text": "Это демо текст навыка про физику света в работе с материалами. Текст будет обновляться и дополняться, опираясь на домашки и фидбеки пользователей. В нем могут встречаться ошибки, опечатки, сырые иллюстрации. Нам важно проверить материал на работоспособность, прежде чем финалить текст."
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "a884c11681",
+            "data": {
+              "file": {
+                "ext": "png",
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-01-31/55bed058-7634-4923-991c-b4c44ed8bdea.png",
+                "name": "PBR Физика света fb5ab80f4c3f46a494901b2d90ecea90/Cover.png",
+                "size": 1025109,
+                "title": "PBR Физика света fb5ab80f4c3f46a494901b2d90ecea90/Cover.png",
+                "width": 1902,
+                "height": 843,
+                "thumbnail": {
+                  "ext": "png",
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-01-31/55c15d41-bef7-44e3-a8a1-c1cdb46f24ad.png",
+                  "name": "t_PBR Физика света fb5ab80f4c3f46a494901b2d90ecea90/Cover.png",
+                  "size": 51620,
+                  "title": "t_PBR Физика света fb5ab80f4c3f46a494901b2d90ecea90/Cover.png",
+                  "width": 300,
+                  "height": 132
+                }
+              }
+            },
+            "type": "image"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-01-31/74d4b461-f476-4527-8f06-b801954511bc.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 765,
+          "y": 375,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "JQ5Kglz",
+    "fields": {
+      "slug": "ritmy",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "Ритмы",
+      "description": {
+        "blocks": [
+          {
+            "id": "4f0b3f74d2",
+            "data": {
+              "text": "Физическая реальность строится из множества повторений. Мы видим повторяющиеся деревья, автомобили, дома, людей, посуду, мебель, окна, предметы, формы и прочее. Ритм настолько глубоко вписан в реальность, что мы часто его даже не замечаем. А ведь для художника это такой же важный элемент художественной выразительности, как и для музыканта. Поэтому в этом навыке будем учиться наблюдать и строить ритмы."
+            },
+            "type": "paragraph"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-01-29/3c0bd986-098d-4afb-99e4-53bae7e3a0f4.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 195,
+          "y": 705,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "VlNxnQ7",
+    "fields": {
+      "slug": "istoriia-i-zhizn",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "История и жизнь",
+      "description": {
+        "blocks": [],
+        "__typename": "EditorField"
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-02-03/06c92923-9310-49b4-9d14-b93fda58c899.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 195,
+          "y": 840,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "3QGb6LE",
+    "fields": {
+      "slug": "povrezhdeniia",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "0KQng2R",
+      "title": "Повреждения",
+      "description": {
+        "blocks": [
+          {
+            "id": "bae635687e",
+            "data": {
+              "text": "В этом навыке учимся делать естественные и логичные повреждения, чтобы сделать модели выразительнее и реалистичнее. Ломать — не строить, это намного интереснее."
+            },
+            "type": "paragraph"
+          }
+        ]
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-02-04/88b8279f-bac2-4878-97a0-b693763e21e0.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 45,
+          "y": 840,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "rlR5N2n",
+    "fields": {
+      "slug": "eksport-i-import",
+      "type": "secondary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "XplwdLW",
+      "title": "Экспорт",
+      "description": {
+        "time": 1680115342787,
+        "blocks": [
+          {
+            "id": "444c836803",
+            "data": {
+              "text": "Изучаем как правильно экспортировать 3D модели. Можешь смотреть контент в любом порядке"
+            },
+            "type": "paragraph"
+          },
+          {
+            "id": "f10431cec7",
+            "data": {
+              "file": {
+                "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-03-29/f2f7d542-a6a4-43f6-ae35-af6886a94745.png",
+                "name": "Экспорт и импорт 39c3cc8b56894b43abbaf089e7925af6/Import_Export 1.png",
+                "width": 600,
+                "height": 600,
+                "thumbnail": {
+                  "url": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/quest/2023-03-29/97389c9d-86c3-46c6-ae14-d233ee9060a6.png",
+                  "width": 300,
+                  "height": 300,
+                  "__typename": "ThumbnailField"
+                },
+                "__typename": "ImageFileField"
+              },
+              "caption": "",
+              "stretched": false,
+              "withBorder": false,
+              "withBackground": false
+            },
+            "type": "image"
+          }
+        ],
+        "version": "2.26.4"
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-03-29/4056571d-ac72-4b4d-8444-ebc7790fc351.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 360,
+          "y": 375,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "7leNzLK",
+    "fields": {
+      "slug": "dielektriki",
+      "type": "primary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "REQ7bLj",
+      "title": "Диэлектрики",
+      "description": {
+        "blocks": []
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-05-19/7593a361-8757-47e0-a220-04a42241cbf1.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 930,
+          "y": 435,
+          "assigned": true
+        }
+      }
+    }
+  },
+  {
+    "model": "skills.skill",
+    "pk": "KQngg2R",
+    "fields": {
+      "slug": "sloi-vospriiatiia",
+      "type": "secondary",
+      "skill_tree": "0KQng2R",
+      "skill_category": "O7lezLK",
+      "title": "Слои восприятия",
+      "description": {
+        "blocks": []
+      },
+      "icon": "https://retry-school.fra1.digitaloceanspaces.com/media/uploaded/skill/2023-05-14/f8b6dea1-4264-4076-b7c4-ce5e38b216ff.png",
+      "published": true,
+      "meta": {
+        "position": {
+          "x": 360,
+          "y": 210,
+          "assigned": true
+        }
+      }
+    }
+  }
+]
