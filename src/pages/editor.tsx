@@ -10,7 +10,7 @@ import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary"
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin"
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext"
 import { useEffect } from "react"
-import { type EditorState, type SerializedEditorState } from "lexical"
+import { type EditorState } from "lexical"
 import CollapsiblePlugin from "~/components/editor/CollapsiblePlugin"
 import { CollapsibleContainerNode } from "~/components/editor/CollapsiblePlugin/CollapsibleContainerNode"
 import { CollapsibleContentNode } from "~/components/editor/CollapsiblePlugin/CollapsibleContentNode"
@@ -49,10 +49,10 @@ function LocalStoragePlugin() {
   const [editor] = useLexicalComposerContext()
 
   useEffect(() => {
-    const localState = (localStorage?.editor || editor.getEditorState()) as
-      | SerializedEditorState
-      | string
-    const state = editor.parseEditorState(localState)
+    if (!localStorage?.editor) {
+      return
+    }
+    const state = editor.parseEditorState(localStorage?.editor as string)
     editor.setEditorState(state)
   }, [editor])
 
