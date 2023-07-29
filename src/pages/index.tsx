@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { signOut, useSession } from "next-auth/react"
 import Button from "~/components/button"
+import Link from "next/link"
 
 export default function Home() {
   const { data } = useSession()
@@ -26,9 +27,9 @@ export default function Home() {
             ) : (
               <span>
                 Hey, go{" "}
-                <a className="text-green-500" href="/auth/signin">
+                <Link className="text-green-500" href="/auth/signin">
                   sign in
-                </a>
+                </Link>
               </span>
             )}
           </div>
