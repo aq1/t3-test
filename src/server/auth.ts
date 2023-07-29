@@ -7,6 +7,7 @@ import {
   type NextAuthOptions,
 } from "next-auth"
 import { prisma } from "~/server/db"
+import { env } from "~/env.mjs"
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
@@ -36,9 +37,10 @@ declare module "next-auth" {
  */
 export const authOptions: NextAuthOptions = {
   pages: {
-    signIn: "/login",
+    signIn: "/auth/login",
     signOut: "/",
-    error: "",
+    error: "/auth/error",
+    verifyRequest: "/auth/verify",
   },
   callbacks: {
     session: ({ session, user }) => ({
@@ -52,8 +54,8 @@ export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     EmailProvider({
-      server: process.env.EMAIL_SERVER,
-      from: process.env.EMAIL_FROM,
+      server: env.EMAIL_SERVER,
+      from: env.EMAIL_FROM,
     }),
     // DiscordProvider({
     //   clientId: env.DISCORD_CLIENT_ID,

@@ -1,6 +1,6 @@
 import * as Toolbar from "@radix-ui/react-toolbar"
 import { TOGGLE_LINK_COMMAND } from "@lexical/link"
-
+import { $setBlocksType } from "@lexical/selection"
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext"
 import { INSERT_COLLAPSIBLE_COMMAND } from "~/components/editor/CollapsiblePlugin"
@@ -13,8 +13,19 @@ import {
 } from "lexical"
 import { cn } from "~/lib/utils"
 import { useEffect, useState } from "react"
+import { $createHeadingNode, type HeadingTagType } from "@lexical/rich-text"
 
 function ParagraphButton() {
+  const [editor] = useLexicalComposerContext()
+  const formatHeading = (headingSize: HeadingTagType) => {
+    editor.update(() => {
+      const selection = $getSelection()
+      if ($isRangeSelection(selection)) {
+        console.log(selection, headingSize)
+        $setBlocksType(selection, () => $createHeadingNode(headingSize))
+      }
+    })
+  }
   return (
     <DropdownMenu.Root>
       <Toolbar.Button asChild>
@@ -27,7 +38,17 @@ function ParagraphButton() {
         </DropdownMenu.Trigger>
       </Toolbar.Button>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content></DropdownMenu.Content>
+        <DropdownMenu.Content className="rounded-lg border-gray-300 bg-gray-400 p-5 text-gray-100 outline-none ">
+          <DropdownMenu.Item onClick={() => formatHeading("h1")}>
+            Заголовок 1
+          </DropdownMenu.Item>
+          <DropdownMenu.Item onClick={() => formatHeading("h2")}>
+            Заголовок 2
+          </DropdownMenu.Item>
+          <DropdownMenu.Item onClick={() => formatHeading("h3")}>
+            Заголовок 3
+          </DropdownMenu.Item>
+        </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>
   )

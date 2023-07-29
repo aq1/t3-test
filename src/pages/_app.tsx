@@ -5,7 +5,7 @@ import { api } from "~/utils/api"
 import "~/styles/globals.css"
 import "remixicon/fonts/remixicon.css"
 
-const MyApp: AppType<{ session: Session | null }> = ({
+const RetryApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
@@ -18,4 +18,4 @@ const MyApp: AppType<{ session: Session | null }> = ({
   )
 }
 
-export default api.withTRPC(MyApp)
+export default api.withTRPC(RetryApp)

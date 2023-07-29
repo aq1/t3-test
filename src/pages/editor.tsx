@@ -9,8 +9,8 @@ import { ContentEditable } from "@lexical/react/LexicalContentEditable"
 import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary"
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin"
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext"
-import { useEffect } from "react"
-import { type EditorState } from "lexical"
+import { useEffect, useRef } from "react"
+import { type EditorState, type NodeKey } from "lexical"
 import CollapsiblePlugin from "~/components/editor/CollapsiblePlugin"
 import { CollapsibleContainerNode } from "~/components/editor/CollapsiblePlugin/CollapsibleContainerNode"
 import { CollapsibleContentNode } from "~/components/editor/CollapsiblePlugin/CollapsibleContentNode"
@@ -22,6 +22,9 @@ import { ListItemNode, ListNode } from "@lexical/list"
 import DragDropPastePlugin from "~/components/editor/DragDropPastePlugin"
 import ImagePlugin from "~/components/editor/ImagePlugin"
 import AutoLinkPlugin from "~/components/editor/AutoLinkPlugin"
+import { HeadingNode, type HeadingTagType } from "@lexical/rich-text"
+import LexicalTableOfContents from "@lexical/react/LexicalTableOfContents"
+import { cn } from "~/lib/utils"
 
 // function JSONView() {
 //   const [editor] = useLexicalComposerContext()
@@ -59,10 +62,50 @@ function LocalStoragePlugin() {
   return null
 }
 
+type TableOfContentsEntry = [key: NodeKey, text: string, tag: HeadingTagType]
+
+function TableOfContents({
+  tableOfContents,
+}: {
+  tableOfContents: Array<TableOfContentsEntry>
+}) {
+  const [editor] = useLexicalComposerContext()
+  const selectedIndex = useRef(0)
+
+  function scrollToNode(key: NodeKey, currIndex: number) {
+    editor.getEditorState().read(() => {
+      const domElement = editor.getElementByKey(key)
+      if (domElement !== null) {
+        domElement.scrollIntoView()
+        selectedIndex.current = currIndex
+      }
+    })
+  }
+
+  return (
+    <div className="border-l border-gray-200 pt-5">
+      {tableOfContents.map(([key, text, tag], index) => (
+        <div
+          key={key}
+          onClick={() => scrollToNode(key, index)}
+          className={cn(tag === "h2" ? "px-2" : "", tag === "h3" ? "px-4" : "")}
+        >
+          {text}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export default function EditorView() {
   const initialConfig: InitialConfigType = {
     namespace: "RetryEditor",
     theme: {
+      heading: {
+        h1: "text-3xl",
+        h2: "text-2xl",
+        h3: "text-xl",
+      },
       link: "text-green-500",
       text: {
         bold: "font-bold",
@@ -80,14 +123,24 @@ export default function EditorView() {
       CollapsibleTitleNode,
       // ImageNode,
       AutoLinkNode,
+      HeadingNode,
     ],
     editorState: null,
   }
 
   return (
     <LexicalComposer initialConfig={initialConfig}>
-      <div className="flex h-screen w-screen items-center justify-center overflow-x-hidden py-10 text-white">
-        <div className="relative min-h-max w-3/4 p-2">
+      <div className="flex justify-center gap-5 px-16 text-gray-100">
+        <div className=" flex-grow-0 basis-1/4">
+          <div className="sticky top-0">
+            <LexicalTableOfContents>
+              {(tableOfContents) => {
+                return <TableOfContents tableOfContents={tableOfContents} />
+              }}
+            </LexicalTableOfContents>
+          </div>
+        </div>
+        <div className="relative">
           <ToolbarPlugin />
           <OnChangePlugin onChange={onChange} />
           <CollapsiblePlugin />
@@ -110,6 +163,7 @@ export default function EditorView() {
           <ListPlugin />
           <HistoryPlugin />
         </div>
+        <div className="flex-grow-0 basis-1/4"></div>
       </div>
     </LexicalComposer>
   )
