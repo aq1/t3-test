@@ -1,11 +1,6 @@
-import { forwardRef, type ReactNode } from "react"
+import { type ComponentProps, forwardRef } from "react"
 
-interface ButtonProps {
-  placeholder?: string
-  children?: ReactNode
-}
-
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+const Button = forwardRef<HTMLButtonElement, ComponentProps<"button">>(
   (props, forwardedRef) => (
     <button
       {...props}

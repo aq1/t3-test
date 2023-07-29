@@ -8,7 +8,7 @@ import Layout from "~/pages/auth/layout"
 import Input from "~/components/input"
 import Button from "~/components/button"
 
-export default function Login({
+export default function Signin({
   csrfToken,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (

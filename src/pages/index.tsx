@@ -1,6 +1,9 @@
 import Head from "next/head"
+import { signOut, useSession } from "next-auth/react"
+import Button from "~/components/button"
 
 export default function Home() {
+  const { data } = useSession()
   return (
     <>
       <Head>
@@ -10,17 +13,24 @@ export default function Home() {
       </Head>
       <main className="h-screen w-screen">
         <div className="flex h-full w-full justify-center gap-5 text-gray-100">
-          <div className="flex-grow-0 basis-1/4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae,
-            commodi dicta dolorum exercitationem impedit nihil nobis
-            reprehenderit! Consectetur distinctio eum exercitationem hic natus
-            non, numquam repellendus sunt, suscipit, ut veniam!
-          </div>
-          <div className="basis-1/2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-            error facere fugiat molestiae neque provident quidem sit voluptatum.
-            Cupiditate dignissimos, eligendi enim eum explicabo fugiat iure
-            laboriosam reiciendis similique soluta.
+          <div className="flex-grow-0 basis-1/4"></div>
+          <div className="h-fit w-fit pt-10">
+            {data ? (
+              <Button
+                onClick={() => {
+                  signOut().catch(() => {})
+                }}
+              >
+                Sign Out
+              </Button>
+            ) : (
+              <span>
+                Hey, go{" "}
+                <a className="text-green-500" href="/auth/signin">
+                  sign in
+                </a>
+              </span>
+            )}
           </div>
           <div className="flex-grow-0 basis-1/4"></div>
         </div>

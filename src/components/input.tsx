@@ -1,6 +1,6 @@
-import { forwardRef, type HTMLProps } from "react"
+import { type ComponentProps, forwardRef } from "react"
 
-const Input = forwardRef<HTMLInputElement, HTMLProps<HTMLInputElement>>(
+const Input = forwardRef<HTMLInputElement, ComponentProps<"input">>(
   (props, forwardedRef) => (
     <input
       {...props}
